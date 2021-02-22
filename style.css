@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screen{
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar{
+  height: calc(100vh - 100px);
+  background-color: #000;
+  width: 200px;
+}
+
+.central{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(100vh - 100px);
+}
+
+.upgrade{
+  width: calc(100vw - 200px);
+  background-color: #101010;
+  height: 100px;
+}
+
+.main{
+  height: calc(100vh - 200px);
+  width: calc(100vw - 200px);
+  background-color: grey;
+  overflow: auto;
+}
+
+.player{
+  width: 100%;
+  height: 100px;
+  background-color: #383838;
+  position: fixed;
+  bottom: 0;
+}
