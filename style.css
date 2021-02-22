@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .screen{
@@ -13,6 +14,58 @@
   height: calc(100vh - 100px);
   background-color: #000;
   width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stilelogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.home{
+  margin-bottom: 15px;
+}
+
+.home ul li{
+  color: grey;
+  padding-left: 10px;
+  line-height: 35px;
+}
+
+.home ul li:first-child{
+  color: white;
+}
+
+.home ul li i,
+.home ul li .library{
+  padding: 0 10px;
+}
+
+.library{
+  color: white;
+  height: 20px;
+}
+
+.playlist ul li:first-child{
+  color: white;
+}
+
+.playlist ul li{
+  color: grey;
+  padding-left: 10px;
+  line-height: 35px;
+}
+
+.playlist ul li i{
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.playlist ul li span{
+  padding-left: 10px;
 }
 
 .central{
@@ -26,19 +79,33 @@
   width: calc(100vw - 200px);
   background-color: #101010;
   height: 100px;
+  position: relative;
+}
+
+.butupgrade{
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 250px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
 }
 
 .main{
   height: calc(100vh - 200px);
   width: calc(100vw - 200px);
-  background-color: grey;
+  background-color: #000d1a;
   overflow: auto;
 }
 
 .player{
   width: 100%;
   height: 100px;
-  background-color: #383838;
+  background-color: #202020;
   position: fixed;
   bottom: 0;
 }
