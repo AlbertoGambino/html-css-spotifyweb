@@ -68,6 +68,14 @@
   padding-left: 10px;
 }
 
+.installprofile{
+  align-self: ;
+}
+
+.install{
+  color: grey;
+}
+
 .central{
   display: flex;
   flex-direction: column;
@@ -79,7 +87,6 @@
   width: calc(100vw - 200px);
   background-color: #101010;
   height: 100px;
-  position: relative;
 }
 
 .butupgrade{
@@ -90,7 +97,7 @@
   padding: 10px 20px;
   font-weight: bold;
   width: 250px;
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 20px;
 }
@@ -100,6 +107,88 @@
   width: calc(100vw - 200px);
   background-color: #000d1a;
   overflow: auto;
+}
+
+.evidence{
+  height: 30px;
+  text-align: center;
+  color: grey;
+}
+
+.evidence span{
+  padding: 5px;
+}
+
+.evidence::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: gold;
+  position: relative;
+  left: 545px;
+}
+
+.recently{
+  text-align: left;
+  color: white;
+  font-size: 1.5rem;
+  padding: 30px 20px;
+}
+
+.cardbox{
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnail{
+  flex-basis: calc(100% / 6.5);
+}
+
+.stilefoto img{
+  width: 100%;
+}
+
+.titolo, .autore{
+  text-align: center;
+}
+
+.titolo{
+  color: white;
+  padding: 20px 0;
+}
+
+.autore{
+  color: grey;
+}
+
+.suggerimenti{
+  color: grey;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+#cardbox2{
+  justify-content: flex-start;
+}
+
+#cardbox2 .thumbnail{
+  margin-right: 25px;
+}
+
+.cardbox3{
+  padding: 0 20px;
+  display: flex;
+}
+
+.cardbox3 .stilefoto img{
+  border-radius: 50%;
+}
+
+.cardbox3 .thumbnail{
+  margin-right: 25px;
 }
 
 .player{
