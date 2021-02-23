@@ -69,12 +69,32 @@
 }
 
 .installprofile{
-  align-self: ;
+  padding-left: 20px;
+
 }
 
 .install{
   color: grey;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: baseline;
 }
+
+.profile{
+  color: white;
+}
+
+.install span, .profile span{
+  padding-left: 10px;
+}
+
+.download, .profilo{
+  height: 20px;
+  padding-top: 5px;
+}
+
+
 
 .central{
   display: flex;
@@ -119,7 +139,7 @@
   padding: 5px;
 }
 
-.evidence::after{
+.evidence:first-child::after{
   content: "";
   display: block;
   width: 40px;
