@@ -16,8 +16,37 @@
   width: 200px;
   display: flex;
   flex-direction: column;
+}
 
+.sidebar2{
+  height: calc(100vh - 100px);
+  background-color: #000;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  justify-content: space-between;
+  position: relative;
+}
 
+.sidebaricon1 ul li{
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.sidebaricon2{
+  position: absolute;
+  bottom: 0;
+  left: 10px
+}
+
+.sidebaricon2 ul li{
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  padding: 5px;
 }
 
 .justify{
@@ -51,6 +80,7 @@
 
 .home ul li:first-child{
   color: white;
+  border-left: 2px solid gold;
 }
 
 .home ul li i,
@@ -125,20 +155,24 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: calc(100vh - 100px);
+  position: relative;
+  padding-top: 100px;
+  background-color: #000d1a;
 }
 
 .upgrade{
   width: calc(100vw - 200px);
-  background-color: #101010;
+  /* background-color: #000d1a; */
   height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.invisibile{
-  background-color: rgba(255, 0, 0, 0.2);
+.invisible{
   width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .butupgrade{
@@ -169,8 +203,12 @@
 
 .evidence{
   height: 30px;
-  text-align: center;
   color: grey;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .evidence span:hover{
@@ -274,6 +312,7 @@
   margin-right: 25px;
 }
 
+
 .cardbox3{
   padding: 0 20px;
   display: flex;
@@ -285,6 +324,10 @@
 
 .cardbox3 .thumbnail{
   margin-right: 25px;
+}
+
+.cardbox3 .layover{
+  border-radius: 50%;
 }
 
 .player{
@@ -434,4 +477,102 @@
   height: 4px;
   width: 20%;
   background: white;
+}
+
+@media screen and (max-width:560px){
+
+  .sidebar{
+    display: none;
+  }
+
+  .sidebar2{
+    display: block;
+  }
+
+  .main{
+    width: calc(100vw - 50px);
+  }
+
+  .upgrade{
+    width: calc(100vw - 50px);
+  }
+
+
+  .cardbox{
+    flex-wrap: wrap;
+  }
+
+  .cardbox .thumbnail{
+    flex-basis: calc(100% / 2.1);
+  }
+
+  .playbutton span{
+    padding: 0 5px;
+  }
+
+  #cardbox2{
+    flex-wrap: wrap;
+  }
+
+  #cardbox2 .thumbnail{
+    flex-basis: calc(100% / 2.3);
+  }
+
+  .cardbox3{
+    flex-wrap: wrap;
+  }
+  .cardbox3 .thumbnail{
+    flex-basis: calc(100% / 2.3);
+  }
+}
+
+@media screen and (min-width:561px) and (max-width:879px){
+
+  .cardbox{
+    flex-wrap: wrap;
+  }
+
+  .cardbox .thumbnail{
+    flex-basis: calc(100% / 2);
+  }
+  #cardbox2{
+    flex-wrap: wrap;
+  }
+
+  #cardbox2 .thumbnail{
+    flex-basis: calc(100% / 2.3);
+  }
+
+  .cardbox3{
+    flex-wrap: wrap;
+  }
+  .cardbox3 .thumbnail{
+    flex-basis: calc(100% / 2.3);
+  }
+}
+
+@media screen and (min-width:880px) and (max-width:1000px){
+  .cardbox{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .cardbox .thumbnail{
+    flex-basis: calc(100% / 4.2);
+    padding: 0 5px;
+  }
+  #cardbox2{
+    flex-wrap: wrap;
+  }
+
+  #cardbox2 .thumbnail{
+    flex-basis: calc(100% / 4.3);
+  }
+
+  .cardbox3{
+    flex-wrap: wrap;
+  }
+  .cardbox3 .thumbnail{
+    flex-basis: calc(100% / 4.3);
+  }
 }
