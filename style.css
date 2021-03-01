@@ -336,7 +336,7 @@
   background-color: #202020;
   position: fixed;
   bottom: 0;
-  /* align-items: center; */
+
 }
 
 .playercontainer{
@@ -496,7 +496,6 @@
   .upgrade{
     width: calc(100vw - 50px);
   }
-
 
   .cardbox{
     flex-wrap: wrap;

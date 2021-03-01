@@ -112,7 +112,7 @@
             <span>SCOPRI</span>
 
           </div>
-          <div class="recently">
+          <div id="javascript1" class="recently">
 
             <strong>Recently played</strong>
 
@@ -261,7 +261,7 @@
             </div>
 
           </div>
-          <div class="recently">
+          <div id="javascript2" class="recently">
 
             <strong>Creato per John Doe</strong>
 
@@ -311,9 +311,10 @@
             </div>
 
           </div>
-          <div class="recently">
+          <div id="javascript3" class="recently">
 
             <strong>Artisti più popolari</strong>
+
 
           </div>
           <div class="suggerimenti">
@@ -437,7 +438,15 @@
 
     </div>
 
+  <script>
 
+    console.log('hello world');
+
+    document.getElementById('javascript1').innerHTML = "Javascript più popolari";
+    document.getElementById('javascript2').innerHTML = "Creato per Javascript";
+    document.getElementById('javascript3').innerHTML = "Artisti più Javascript";
+
+  </script>
 
   </body>
 </html>
